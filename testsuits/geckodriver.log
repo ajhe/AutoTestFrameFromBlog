@@ -1,0 +1,9 @@
+1536338054884	geckodriver	INFO	geckodriver 0.19.1
+1536338054901	geckodriver	INFO	Listening on 127.0.0.1:53708
+1536338057991	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mr\\AppData\\Local\\Temp\\rust_mozprofile.s6i48J88IMTH"
+1536338067970	Marionette	INFO	Listening on port 53719
+1536338069434	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+1536338077759	Marionette	INFO	New connections will no longer be accepted
+seleniu&json=1&p=3&sid=26522_1434_21123_22159&req=2&csor=7&pwd=seleni&cb=jQuery110200915580210624728_1536337840259&_=1536337840267, line 1: TypeError: jQuery110200915580210624728_1536337840259 is not a function
+1536337845522	Marionette	INFO	New connections will no longer be accepted
