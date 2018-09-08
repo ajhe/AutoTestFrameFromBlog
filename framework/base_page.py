@@ -2,6 +2,7 @@
 
 import time
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.keys import Keys
 from framework.logger import Logger
 import os
 
@@ -190,6 +191,47 @@ class BasePage(object):
         except NameError as e:
             mylog.error("Failed to clcik the element with %s " % e)
             self.get_window_img()
+
+    #刷新界面
+    def refresh(self):
+        self.driver.refresh()
+        mylog.info("Refresh the current page.")
+
+    #在浏览器新开一个标签页（tab）
+    def open_tab(self):
+        self.driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + 't')
+        self.wait(2)
+        mylog.info("Waiting for 2 seconds, Open a new tab.")
+
+    #获取当前浏览器版本号
+    def get_browser_version(self):
+        version = self.driver.capabilities['version']
+        mylog.info("The browser version is %s." % version)
+        return version
+
+    #获取定位元素的文字内容（text）
+    def get_element_text(self, selector):
+        el = self.find_element(selector)
+        try:
+            element_text = el.text
+            mylog.info("The element text is %s." % element_text)
+            return element_text
+        except NameError as e:
+            mylog.info("Failed to get the text with: %s" % e)
+        except Exception as msg:
+            mylog.info("Failed to get the text with: %s" % msg)
+
+    #获取元素大小size
+    def get_element_size(self, selector):
+        el = self.find_element(selector)
+        try:
+            element_size = el.size
+            mylog.info("The element size is %s" % element_size)
+            return element_size
+        except NameError as e:
+            mylog.info("Failed to get the size with: %s" % e)
+        except Exception as msg:
+            mylog.info("Failed to get the size with: %s" % msg)
 
     @staticmethod
     def sleep(seconds):

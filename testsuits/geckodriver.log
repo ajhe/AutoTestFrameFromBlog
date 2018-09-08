@@ -1,18 +1,17 @@
-1536393536853	geckodriver	INFO	geckodriver 0.19.1
-1536393536861	geckodriver	INFO	Listening on 127.0.0.1:58390
-1536393537409	mozrunner::runner	INFO	Running command: "D:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.kFqdZVXlpUtr"
-1536393543551	Marionette	INFO	Listening on port 58396
-1536393544300	Marionette	WARN	TLS certificate errors will be ignored for this session
+1536419347497	geckodriver	INFO	geckodriver 0.19.1
+1536419347527	geckodriver	INFO	Listening on 127.0.0.1:53325
+1536419350589	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mr\\AppData\\Local\\Temp\\rust_mozprofile.sWTltbWK30Td"
+1536419362546	Marionette	INFO	Listening on port 53333
+1536419363975	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
-JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=s&json=1&p=3&sid=1460_21125_18559_20930&req=2&csor=1&cb=jQuery11020800488554747828_1536393546851&_=1536393546853, line 1: TypeError: jQuery11020800488554747828_1536393546851 is not a function
-JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=selen&json=1&p=3&sid=1460_21125_18559_20930&req=2&csor=5&pwd=sele&cb=jQuery11020800488554747828_1536393546851&_=1536393546857, line 1: TypeError: jQuery11020800488554747828_1536393546851 is not a function
-JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=se&json=1&p=3&sid=1460_21125_18559_20930&req=2&csor=2&pwd=s&cb=jQuery11020800488554747828_1536393546851&_=1536393546854, line 1: TypeError: jQuery11020800488554747828_1536393546851 is not a function
-JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=sele&json=1&p=3&sid=1460_21125_18559_20930&req=2&csor=4&pwd=sel&cb=jQuery11020800488554747828_1536393546851&_=1536393546856, line 1: TypeError: jQuery11020800488554747828_1536393546851 is not a function
-JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=sel&json=1&p=3&sid=1460_21125_18559_20930&req=2&csor=3&pwd=se&cb=jQuery11020800488554747828_1536393546851&_=1536393546855, line 1: TypeError: jQuery11020800488554747828_1536393546851 is not a function
-JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=seleni&json=1&p=3&sid=1460_21125_18559_20930&req=2&csor=6&pwd=selen&cb=jQuery11020800488554747828_1536393546851&_=1536393546858, line 1: TypeError: jQuery11020800488554747828_1536393546851 is not a function
-JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=seleniu&json=1&p=3&sid=1460_21125_18559_20930&req=2&csor=7&pwd=seleni&cb=jQuery11020800488554747828_1536393546851&_=1536393546859, line 1: TypeError: jQuery11020800488554747828_1536393546851 is not a function
-JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=selenium&json=1&p=3&sid=1460_21125_18559_20930&req=2&csor=8&pwd=seleniu&cb=jQuery11020800488554747828_1536393546851&_=1536393546860, line 1: TypeError: jQuery11020800488554747828_1536393546851 is not a function
-1536393549679	Marionette	INFO	New connections will no longer be accepted
-ons will no longer be accepted
-eError: jQuery1102039591434033145434_1536391621969 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=se&json=1&p=3&sid=1455_26258_26911_21078_20929&req=2&csor=2&pwd=s&cb=jQuery1102015258968803618211_1536419367803&_=1536419367806, line 1: TypeError: jQuery1102015258968803618211_1536419367803 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=selen&json=1&p=3&sid=1455_26258_26911_21078_20929&req=2&csor=5&pwd=sele&cb=jQuery1102015258968803618211_1536419367803&_=1536419367809, line 1: TypeError: jQuery1102015258968803618211_1536419367803 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=s&json=1&p=3&sid=1455_26258_26911_21078_20929&req=2&csor=1&cb=jQuery1102015258968803618211_1536419367803&_=1536419367805, line 1: TypeError: jQuery1102015258968803618211_1536419367803 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=sel&json=1&p=3&sid=1455_26258_26911_21078_20929&req=2&csor=3&pwd=se&cb=jQuery1102015258968803618211_1536419367803&_=1536419367807, line 1: TypeError: jQuery1102015258968803618211_1536419367803 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=seleni&json=1&p=3&sid=1455_26258_26911_21078_20929&req=2&csor=6&pwd=selen&cb=jQuery1102015258968803618211_1536419367803&_=1536419367810, line 1: TypeError: jQuery1102015258968803618211_1536419367803 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=sele&json=1&p=3&sid=1455_26258_26911_21078_20929&req=2&csor=4&pwd=sel&cb=jQuery1102015258968803618211_1536419367803&_=1536419367808, line 1: TypeError: jQuery1102015258968803618211_1536419367803 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=selenium&json=1&p=3&sid=1455_26258_26911_21078_20929&req=2&csor=8&pwd=seleniu&cb=jQuery1102015258968803618211_1536419367803&_=1536419367812, line 1: TypeError: jQuery1102015258968803618211_1536419367803 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=seleniu&json=1&p=3&sid=1455_26258_26911_21078_20929&req=2&csor=7&pwd=seleni&cb=jQuery1102015258968803618211_1536419367803&_=1536419367811, line 1: TypeError: jQuery1102015258968803618211_1536419367803 is not a function
+1536419373237	Marionette	INFO	New connections will no longer be accepted
+36391621969 is not a function
 1536391625210	Marionette	INFO	New connections will no longer be accepted
