@@ -4,8 +4,9 @@ import time
 import unittest
 from framework.browser_engine import BrowserEngine
 from framework.logger import Logger
+from pageobjects.baidu_homepage import HomePage
 
-mylog = Logger(logger='BaiduSerach').getlog()
+#mylog = Logger(logger='BaiduSerach').getlog()
 
 class BaiduSerach(unittest.TestCase):
     """
@@ -32,17 +33,23 @@ class BaiduSerach(unittest.TestCase):
         test开头，是unittest框架的测试用例，记得测试用例必须test开头
         :return:
         """
+        '''
         self.driver.find_element_by_id('kw').send_keys('selenium')
         time.sleep(2)
         self.driver.find_element_by_id('su').click()
         time.sleep(2)
+        '''
+        homepage = HomePage(self.driver)
+        homepage.type_input_box("selenium")
+        homepage.click_search_submit_btn()
+        time.sleep(2)
         try:
             assert 'selenium' in self.driver.title
             print ("Test pass")
-            mylog.info("Test pass")
+            #mylog.info("Test pass")
         except Exception as e:
             print("Test Fail", format(e))
-            mylog.info("Test Fail", format(e))
+            #mylog.info("Test Fail", format(e))
 
 
 if __name__ == '__main__':
