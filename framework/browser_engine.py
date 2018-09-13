@@ -17,13 +17,13 @@ class BrowserEngine(object):
     def __init__(self, driver):
         self.driver = driver
 
-    #read this config file(config.ini) return use which driver
-    def open_browser(self):
+    # read this config file(config.ini) return use which driver
+    def open_browser(self, *args):
         config = ConfigParser.ConfigParser()
-        #config file path
+        # config file path
         config_file_path = self.root_path + '/config/config.ini'
 
-        #read config file
+        # read config file
         config.read(config_file_path)
         browser = config.get('browserType', 'browserName')
         logger.info("You had select %s browser" % browser)

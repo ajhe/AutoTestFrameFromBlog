@@ -20,37 +20,37 @@ class BasePage(object):
         """
         self.driver = driver
 
-    #退出浏览器
+    # 退出浏览器
     def quit_browser(self):
         self.driver.quit()
         mylog.info("Quit the browser")
 
-    #浏览器前进操作
+    # 浏览器前进操作
     def forward(self):
         self.driver.forward()
         mylog.info("Click forward on current page")
 
-    #浏览器后退操作
+    # 浏览器后退操作
     def back(self):
         self.driver.back()
         mylog.info("Click back on current page")
 
-    #获取当前URL地址
+    # 获取当前URL地址
     def get_page_url(self):
         mylog.info("Current page URL is : " % self.driver.current_url)
         return self.driver.current_url
 
-    #获取当前窗口标题（title）
+    # 获取当前窗口标题（title）
     def get_page_title(self):
         mylog.info("Current page title is : " % self.driver.title)
         return self.driver.title
 
-    #设置等待时间
+    # 设置等待时间
     def wait(self, seconds):
         self.driver.implicitly_wait(seconds)
         mylog.info("wait for %d seconds" % seconds)
 
-    #关闭当前窗口
+    # 关闭当前窗口
     def close(self):
         try:
             self.driver.close()
@@ -58,7 +58,7 @@ class BasePage(object):
         except NameError as e:
             mylog.info("Failed to quit the browser with %s" % e)
 
-    #保存截图
+    # 保存截图
     def get_window_img(self):
         """
         这里我们把保存截图的路径写死，也就是说统一保存至根目录下的screenshots文件夹
@@ -74,7 +74,7 @@ class BasePage(object):
         except NameError as e:
             mylog.info("Failed to take screenshot! %s" % e)
 
-    #定位元素方法
+    # 定位元素方法
     def find_element(self, selector):
         """
         这个地方为什么是根据=>来切割字符串，请看页面里定位元素的方法
@@ -151,7 +151,7 @@ class BasePage(object):
 
         return element
 
-    #输入文本框
+    # 输入文本框
     def type(self, selector, text):
         el = self.find_element(selector)
         try:
@@ -168,7 +168,7 @@ class BasePage(object):
             mylog.error("Failed to type in input box with %s " % msg)
             self.get_window_img()
 
-    #清空文本框
+    # 清空文本框
     def clear(self, selector):
 
         el = self.find_element(selector)
@@ -192,24 +192,24 @@ class BasePage(object):
             mylog.error("Failed to clcik the element with %s " % e)
             self.get_window_img()
 
-    #刷新界面
+    # 刷新界面
     def refresh(self):
         self.driver.refresh()
         mylog.info("Refresh the current page.")
 
-    #在浏览器新开一个标签页（tab）
+    # 在浏览器新开一个标签页（tab）
     def open_tab(self):
         self.driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + 't')
         self.wait(2)
         mylog.info("Waiting for 2 seconds, Open a new tab.")
 
-    #获取当前浏览器版本号
+    # 获取当前浏览器版本号
     def get_browser_version(self):
         version = self.driver.capabilities['version']
         mylog.info("The browser version is %s." % version)
         return version
 
-    #获取定位元素的文字内容（text）
+    # 获取定位元素的文字内容（text）
     def get_element_text(self, selector):
         el = self.find_element(selector)
         try:
@@ -221,7 +221,7 @@ class BasePage(object):
         except Exception as msg:
             mylog.info("Failed to get the text with: %s" % msg)
 
-    #获取元素大小size
+    # 获取元素大小size
     def get_element_size(self, selector):
         el = self.find_element(selector)
         try:

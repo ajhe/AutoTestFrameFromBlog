@@ -1,0 +1,11 @@
+2018-09-13 10:43:01,144 - BrowserEngine - INFO - You had select Firefox browser
+2018-09-13 10:43:01,144 - BrowserEngine - INFO - The test server url is:https://www.baidu.com
+2018-09-13 10:43:08,430 - BrowserEngine - INFO - Starting firefox browser
+2018-09-13 10:43:10,430 - BrowserEngine - INFO - Waiting 2 seconds
+2018-09-13 10:43:11,000 - BrowserEngine - INFO - Open url:https://www.baidu.com
+2018-09-13 10:43:11,009 - BrowserEngine - INFO - Set implicitly wait 10 seconds
+2018-09-13 10:43:11,051 - BasePage - INFO - Had find the element '  ' successful by id via value: kw
+2018-09-13 10:43:11,198 - BasePage - INFO - Had type ' Python ' in inputBox
+2018-09-13 10:43:11,267 - BasePage - INFO - Had find the element '  ' successful by xpath via value //*[@id='su']
+2018-09-13 10:43:11,719 - BasePage - INFO - The element '  ' was clicked.
+2018-09-13 10:43:13,822 - BasePage - INFO - Had take screenshot and save to folder : /screenshots/
